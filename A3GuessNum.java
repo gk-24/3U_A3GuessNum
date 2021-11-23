@@ -1,7 +1,7 @@
 /*
-*Name:
-*Date:
-*Desription:
+*Name: Gurtaj Kaler
+*Date: November 23, 2021
+*Desription: Guess the number assignment 
 */
 
 import java.util.*;
