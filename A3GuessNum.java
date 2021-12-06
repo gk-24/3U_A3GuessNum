@@ -17,26 +17,36 @@ public class A3GuessNum{
     
     // Generate a random number from 0-100.
     int answer = numGenerator.nextInt(101);
-    int guess = -1; // default guess num.
+    int Userguess = -1; // default guess num.
     
+    // Number of tries (K)
+  int K = 5;
+
+  // Guess Variable (i) 
+  int i, guess;
+
+  for (i = 0; i < K; i++) {   
     System.out.println("Guess a number");
      guess = input.nextInt(); 
   
-  // Variables 
+  // Different situations (if its to high, to low or correct and incorrect)
     if (guess == answer)  {
-     System.out.println("Correct answer!");
-     
- break; 
-     else if (guess < answer && i != k -1)
-    System.out.println("Wrong answer");
+     System.out.println("Congrats! You are right");
+  break; 
+    }
+     else if (guess < answer && i != K -1) {
+    System.out.println(" Too low");
+  }
+     else if (guess > answer && i != K - 1) {
+       System.out.println( "Too High" );
+     }
+  }
+  if (i == K) { 
+  System.out.println("You have lost");
+  System.out.println( "The number was " + answer);
+  } 
   }
 
-  // Number of tries (T)
-  int k = 5;
-
-  // Guess Variable 
-  int i, guess;
-  }
 
   
   
