@@ -15,13 +15,37 @@ public class A3GuessNum{
     Scanner input = new Scanner(System.in);
     Random numGenerator = new Random();
     
-    // Generate a random number from 0-5.
-    int answer = numGenerator.nextInt(6);
+    // Generate a random number from 0-100.
+    int answer = numGenerator.nextInt(101);
     int guess = -1; // default guess num.
     
     System.out.println("Guess a number");
-     guess = input.nextInt();  
+     guess = input.nextInt(); 
+  
+  // Variables 
+    if (guess == answer)  {
+     System.out.println("Correct answer!");
+     
+ break; 
+     else if (guess < answer && i != k -1)
+    System.out.println("Wrong answer");
+  }
+
+  // Number of tries (T)
+  int k = 5;
+
+  // Guess Variable 
+  int i, guess;
+  }
+
+  
+  
+
+    
+  
+
+   // 
     
       
   }// close main
-}
+
