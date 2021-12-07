@@ -20,12 +20,12 @@ public class A3GuessNum{
     int Userguess = -1; // default guess num.
     
     // Number of tries (K)
-  int K = 5;
+  int T = 5;
 
   // Guess Variable (i) 
   int i, guess;
 
-  for (i = 0; i < K; i++) {   
+  for (i = 0; i < T; i++) {   
     System.out.println("Guess a number");
      guess = input.nextInt(); 
   
@@ -34,14 +34,14 @@ public class A3GuessNum{
      System.out.println("Congrats! You are right");
   break; 
     }
-     else if (guess < answer && i != K -1) {
+     else if (guess < answer && i != T -1) {
     System.out.println(" Too low");
   }
-     else if (guess > answer && i != K - 1) {
+     else if (guess > answer && i != T - 1) {
        System.out.println( "Too High" );
      }
   }
-  if (i == K) { 
+  if (i == T) { 
   System.out.println("You have lost");
   System.out.println( "The number was " + answer);
   } 
